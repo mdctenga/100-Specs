@@ -77,7 +77,7 @@ var gender = {
 	female: "female",
 	male: "male",
 	unknown: undefined
-}
+};
 
 /* Step 10
  *
@@ -96,7 +96,7 @@ var princess_leia = {
 	money: 890,
 	age: 20,
 	gender: gender.female
-}
+};
 
 /* Step 11
  *
@@ -114,7 +114,7 @@ var princess_leia = {
  	'laughingsquid.com': '162.159.247.97',
  	'slumlordhosting.com': '198.61.179.126',
 	'jsonformatter.curiousconcept.com': '104.28.5.70'
- }
+ };
 
 /* Step 12
  *
@@ -136,7 +136,7 @@ var browsers = {
 	Firefox: "mozilla.org",
 	Sleipnir: "fenrir-inc.com",
 	Konqueror: "konqueror.org"
-}
+};
 
 /* Step 13
  *
@@ -165,7 +165,7 @@ var rainbow = {
  		violet: "#A915ED"
 	},
 	isDouble: true
-}
+};
 
 /* Step 14
  *
@@ -181,7 +181,6 @@ var rainbow = {
  *
  */
 var linuxFlavors = ["Gentoo", "Fedora", "Debian", "Slackware", "Red Hat", "Bieber Linux"];
-
 /* Step 15
  *
  * Declare an array named "DNA" with the
@@ -212,7 +211,7 @@ var laptopCosts = {
  	Alienware: 2500,
  	HP: 499,
  	Surface: 320
-}
+};
 
 /* Step 17
  *
@@ -264,11 +263,11 @@ var scmList = ["git", "svn", "mercurial", "bazaar", "cvs"];
 var beers = {
 	IPA: "Ale",
 	Lager: "Strong",
- 	Heffeweisen: "German", 
+ 	Heffeweisen: "German",
  	Stout: ["Thick", "Dark"],
  	Porter: "Bitter",
- 	Ale: ["Light", "Golden"]              
-}
+ 	Ale: ["Light", "Golden"]
+};
 
 /* Step 20
  *
@@ -308,16 +307,15 @@ function addNumbers (num1, num2){
  * @return {Bool}
  *
  */
-function installLinux (linuxFlavors) {
-	for (var i = 0; i <= linuxFlavors.length; i += 1) {
-		Things[i]
-	};
-	if (true) {
 
-	}
-
-	return linuxFlavors;
-
+function installLinux (linuxType) {
+  for (var i = 0; i < linuxFlavors.length; i += 1) {
+    console.log(linuxType, linuxFlavors[i]);
+    if (linuxType === linuxFlavors[i]) {
+      return true;
+    }
+  }
+  return false;
 }
 
 /* Step 23
